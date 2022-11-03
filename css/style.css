@@ -1,204 +1,203 @@
 :root {
---blanco: #ffffff;
---oscuro: #212121;
---primario:#FFC107;
---secundario:#0097a7;
---gris: #757575;
---grisClaro: #dfe9f3;
-}
-
-html {
-    font-size: 62.5%;
-}
-body {
-    font-size: 16px; /*Un rem es igual a 10 pixeles*/
-    font-family: 'Krub', sans-serif;
-   background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
-    /* Linear-gradient es para poner el fondo de un colo, el resto es para decir que 
-    haga un degradado desde la parte de abajo hasta arriba y que pase de gris claro a blanco */ 
-}
-.boton{
-    background-color: var(--secundario);
-    padding: 1rem 3rem;
-    margin-top: 2rem;
-    color: var(--blanco);
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
-    width: 80%;
-    text-align: center;
-}
-@media (min-width: 768px) {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario:#FFC107;
+    --secundario:#0097a7;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        font-size: 16px; /*Un rem es igual a 10 pixeles*/
+        font-family: 'Krub', sans-serif;
+       background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+        /* Linear-gradient es para poner el fondo de un colo, el resto es para decir que 
+        haga un degradado desde la parte de abajo hasta arriba y que pase de gris claro a blanco */ 
+    }
     .boton{
-        width: auto;
+        background-color: var(--secundario);
+        padding: 1rem 3rem;
+        margin-top: 2rem;
+        color: var(--blanco);
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 2rem;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        border: none;
+        width: 80%;
+        text-align: center;
     }
-}
-.titulo {
-    font-size: 3.8rem;
-}
-
-.titulo span{
-    font-size: 2rem;
-}
-
-.span {
-    font-size: 5rem;
-}
-
-h1,h2,h3 {
-    text-align: center;
-}
-
-.bg-color{
-    background-color: var(--secundario);
-}
-.sombra{
-    background-color: var(--blanco);
-    box-shadow: 1px -2px 11px 0px rgba(112,103,112,0.62);
-    padding: 2rem;
-    border-radius: 1rem;
-}
-.navegacion-principal{
-    margin: 0px auto;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-@media (min-width: 768px){
-    /* Se pone debajo de lo que quiero modificar 
-    para qe cambie al llegar a x pixeles
-    480px para movil 768px para tablet
-    1140px ordenador 1400px ordenador grande
-    Para hacerlo mas rapido se hace con snippets
-    snippet sirvepara asignar teclas y que me escriba algo*/
+    @media (min-width: 768px) {
+        .boton{
+            width: auto;
+        }
+    }
+    .titulo {
+        font-size: 3.8rem;
+    }
+    
+    .titulo span{
+        font-size: 2rem;
+    }
+    
+    .span {
+        font-size: 5rem;
+    }
+    
+    h1,h2,h3 {
+        text-align: center;
+    }
+    
+    .bg-color{
+        background-color: var(--secundario);
+    }
+    .sombra{
+        background-color: var(--blanco);
+        box-shadow: 1px -2px 11px 0px rgba(112,103,112,0.62);
+        padding: 2rem;
+        border-radius: 1rem;
+    }
     .navegacion-principal{
-        flex-direction: row;
-        justify-content: space-around;
+        margin: 0px auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
-.navegacion-principal a{
-    font-weight: 700;
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 10px;
-    color: var(--blanco);
-}
-
-.navegacion-principal a:hover {
-    font-size: 2.5rem;
-    text-decoration: none;
-    color: var(--oscuro);
-    background-color: var(--primario);
-}
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-.fondo{
-    background-image: url(../img/fondo.png);
-    height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 2rem;
-}
-.contenido-fondo{
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contenido-fondo h2{
-    font-weight: 700;
-    font-size: 3rem;
-}
-.contenido-fondo h2, 
-.contenido-fondo p{
-    color:  var(--blanco);
-}
-.location{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.servicios{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
-}
-
-table {
-    border-collapse: collapse;
-    width: 70%;
-    text-align: center;
-    margin: auto;
-}
-  
-caption{
-    font-size: 25px;
-    padding: 15px;
-}
-tr, td, th {
-    border: 1px solid black;
-}
-
-thead{
-    background-color: var(--primario);
-    color: var(--blanco);
-}
-
-tr:nth-child(even){
-    background-color: lightsteelblue;
-}
-
-td a{
-    text-decoration: none;
-    color: var(--oscuro);
-}
-
-td a:hover{
-background-color: var(--secundario);
-color:var(--blanco);
-}
-.formulario{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 400px;
-    background-color: var(--gris);
-    color: var(--blanco);
-    border-radius: 10px;
-    font-weight: 700;
-}
-.formulario p{
-    color: var(--primario);
-}
-.botonform{
+    @media (min-width: 768px){
+        /* Se pone debajo de lo que quiero modificar 
+        para qe cambie al llegar a x pixeles
+        480px para movil 768px para tablet
+        1140px ordenador 1400px ordenador grande
+        Para hacerlo mas rapido se hace con snippets
+        snippet sirvepara asignar teclas y que me escriba algo*/
+        .navegacion-principal{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    .navegacion-principal a{
+        font-weight: 700;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 10px;
+        color: var(--blanco);
+    }
+    
+    .navegacion-principal a:hover {
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: var(--oscuro);
+        background-color: var(--primario);
+    }
+    .contenedor{
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    
+    .fondo{
+        background-image: url(../img/fondo.png);
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .contenido-fondo{
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenido-fondo h2{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .contenido-fondo h2, 
+    .contenido-fondo p{
+        color:  var(--blanco);
+    }
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+    table {
+        border-collapse: collapse;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+      
+    caption{
+        font-size: 25px;
+        padding: 15px;
+    }
+    tr, td, th {
+        border: 1px solid black;
+    }
+    
+    thead{
+        background-color: var(--primario);
+        color: var(--blanco);
+    }
+    
+    tr:nth-child(even){
+        background-color: lightsteelblue;
+    }
+    
+    td a{
+        text-decoration: none;
+        color: var(--oscuro);
+    }
+    
+    td a:hover{
     background-color: var(--secundario);
-    padding: 4px 70px;
-    color: var(--blanco);
-    margin: 20px;
-    font-weight: 700;
-    border-radius: 5px;
-    border: none;
-}
-.red{
-    border-radius: 5px;
-    border: none;
-}
-
-footer{
-    text-align: end;
-}
+    color:var(--blanco);
+    }
+    .formulario{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 400px;
+        background-color: var(--gris);
+        color: var(--blanco);
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    .formulario p{
+        color: var(--primario);
+    }
+    .botonform{
+        background-color: var(--secundario);
+        padding: 4px 70px;
+        color: var(--blanco);
+        margin: 20px;
+        font-weight: 700;
+        border-radius: 5px;
+        border: none;
+    }
+    .red{
+        border-radius: 5px;
+        border: none;
+    }
+    
+    footer{
+        text-align: end;
+    }
