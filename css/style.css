@@ -183,39 +183,40 @@ td a{
 }
 
 td a:hover{
-background-color: var(--secundario);
-color:var(--blanco);
+    background-color: var(--secundario);
+    color:var(--blanco);
 }
 .formulario{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 600px;
     background-color: var(--gris);
-    color: var(--blanco);
-    border-radius: 10px;
-    font-weight: 700;
+    padding: 2rem;
+    border-radius: 1rem;
 }
-.formulario p{
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
     color: var(--primario);
-}
 
-.botonform{
-    background-color: var(--secundario);
-    padding: 4px 70px;
+}
+.campo label{
+    display: block;
     color: var(--blanco);
-    margin: 20px;
-    font-weight: 700;
-    border-radius: 5px;
-    border: none;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
-.red{
-    border-radius: 5px;
+.input-text{
+    width: 90%;
     border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
 }
-
+.w90{
+    width: 93%; 
+}
 footer{
     text-align: end;
 }
