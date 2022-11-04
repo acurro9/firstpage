@@ -101,17 +101,28 @@
       <section>
         <h2>Contacto</h2>
         <div class="formulario">
-          <form>
-            <p>Contáctanos llenando todos los campos</p>
-            <label class="red" for="fname">Nombre</label><br>
-            <input class="red" type="text" name="fname" id="fname" maxlength="50" placeholder="Tu Nombre" required><br>
-            <label class="red" for="telefono">Teléfono</label><br>
-            <input class="red" type="tel" name="telefono" id="telefono" placeholder="Tu Teléfono" required pattern="[0-9]{9}"><br>
-            <label class="red" for="correo">Correo</label><br>
-            <input class="red" type="email" name="correo" id="correo" placeholder="Tu Email" required><br>
-            <label class="red" for="msn"></label>Mensaje<br>
-            <textarea class="red" name="msn" id="msn" cols="22" rows="10" required></textarea><br>
-            <input type="submit" value="Enviar" class="botonform"><br>
+          <form class="formulario">
+            <fieldset>
+              <legend>Contáctanos llenando todos los campos</legend>
+              <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" id="nombre" placeholder="Tu nombre">
+              </div>
+              <div class="campo">
+                <label>Telefono</label>
+                <input class="input-text" type="tel" id="tlf" placeholder="Tu teléfono">
+              </div>             
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" id="email" placeholder="Tu email">
+              </div>           
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text" name="msn" id="msn" cols="30" rows="10"></textarea>
+              </div>
+              <input class="boton w90" type="submit" value="Enviar">
+
+            </fieldset>
           </form>
         </div>
       </section>
